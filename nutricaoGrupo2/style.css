@@ -70,3 +70,8 @@ a:hover {
   background-color: rgba(165, 42, 42, 0.1);
 
 }
+
+#resposta {
+  margin-bottom: 20px; 
+  font-weight: 700;
+}
