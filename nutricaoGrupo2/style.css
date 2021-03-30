@@ -5,7 +5,7 @@
   margin: 0px;
   padding: 0px;
   text-align: justify   ;
-  color: whitesmoke;
+  color: rgb(0, 34, 53);
   font-family: 'Noto Sans JP', sans-serif;
   text-decoration: none;
 }
@@ -38,11 +38,16 @@ header {
   padding: 20px 0px;
   justify-content: space-around;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
+a {
+  padding: 10px;
+}
 a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
+
 }
 
 /* botão de calculo */
