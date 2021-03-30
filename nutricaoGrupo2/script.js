@@ -249,9 +249,9 @@ function calcular() {
                 .toFixed(2)
                 .replace(".", ",")} kg<br>
                 O seu GEB é: ${gebHomem.toFixed(0)}<br>
-                você terá que gastar ${caloriaTotal} calorias para perder os ${emagrecimento.toFixed(
+                você terá que gastar ${caloriaTotal.toFixed(0)} calorias para perder os ${emagrecimento.toFixed(
                     2
-                )} kg<br>
+                ).replace(".", ",")} kg<br>
                 Seu gasto calórico diário é igual a ${parseInt(
                     get
                 )} calorias por dia<br>
@@ -261,12 +261,12 @@ function calcular() {
     } else if (sexo == "f") {
         document.getElementById("resposta").innerHTML = `
             <p>Olá, ${nome}!<br>
-            O seu IMC é: ${imc.toFixed(2)} <br>
-            O seu Peso ideal é: ${pesoIdeal.toFixed(2)} kg<br>
+            O seu IMC é: ${imc.toFixed(2).replace(".", ",")} <br>
+            O seu Peso ideal é: ${pesoIdeal.toFixed(2).replace(".", ",")} kg<br>
             O seu GEB é: ${gebMulher.toFixed(0)}<br>
-            você terá que gastar ${caloriaTotal} calorias para perder os ${emagrecimento.toFixed(
+            você terá que gastar ${caloriaTotal.toFixed(0)} calorias para perder os ${emagrecimento.toFixed(
             2
-        )} kg<br>
+        ).replace(".", ",")} kg<br>
             Seu gasto calórico diário é igual a ${parseInt(
             get
         )} calorias por dia<br>
