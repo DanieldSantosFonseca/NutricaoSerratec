@@ -124,7 +124,7 @@ function calcular() {
     let nivelAtividade = validarNivel(
         parseInt(
             prompt(
-                "Digite de 1 a 5 o quão ativo você é, sendo: 1 =  a sendatario e 5 muito ativo"
+                "Digite o número correspondente ao seu nível de atividade:\n 1: Sedentário \n 2: Pouco ativo \n 3: Moderado \n 4: Ativo \n 5: Muito ativo"
             )
         ),
         true
@@ -135,7 +135,7 @@ function calcular() {
             if (!isNaN(x) && x >= 1 && x <= 5) {
                 y = false
             } else {
-                x = parseInt(prompt("Digite de 1 a 5 o quão ativo você é, sendo: 1 =  a sendatario e 5 muito ativo"))
+                x = parseInt(prompt("Digite o número correspondente ao seu nível de atividade:\n 1: Sedentário \n 2: Pouco ativo \n 3: Moderado \n 4: Ativo \n 5: Muito ativo"))
             }
         }
         return x
