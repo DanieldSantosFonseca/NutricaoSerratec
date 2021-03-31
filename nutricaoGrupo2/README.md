@@ -1,5 +1,4 @@
 # Calorias sob medida
-<p> oi <p>
 !Saber quantas calorias o corpo gasta para manter as funções vitais, o chamado metabolismo basal, é o primeiro passo para adequar a alimentação ao gasto energético diário. Não se trata de tornar-se escravo da contagem de calorias, mas de uma informação relevante para os indivíduos saudáveis e fisicamente ativos que querem emagrecer ou manter o peso corporal.
 ===========================================================================================================
 Existem duas formulas mais adequada para o calculo de necessidade energética diária. Uma delas é a Harris Benedict, que fornece o metabolismo basal. Apesar de ser vovó nas equações (é de 1919), ela é ainda hoje uma das prediletas dos nutricionistas porque não superestima as calorias. Além disso, seu resultado pode ser pelo fator de atividade física, no caso dos fisicamente ativos, e somados à ação dinâmica especifica (gasto adicional de energia para a digestão de alimentos), quando a alimentação é fracionada a cada três horas.
