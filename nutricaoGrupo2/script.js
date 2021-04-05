@@ -152,6 +152,11 @@ function calcular() {
     let get = 0;
     let diasParaEmagrecer = 0;
     let _1KgPorSemana = "";
+    
+    // DEIXAR O NOME BONITIN
+
+    nome = nome.toLowerCase();
+    nome = nome.charAt(0).toUpperCase() + nome.slice(1);
 
     // CONDIÇÕES
 
@@ -253,6 +258,7 @@ function calcular() {
     usuario[0].diasParaEmagrecer = diasParaEmagrecer;
 
     // MOSTRAR RESPOSTAS
+    
 
     if (sexo == "m") {
         document.getElementById("resposta").innerHTML = `
