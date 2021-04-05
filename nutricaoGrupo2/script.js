@@ -41,7 +41,7 @@ const gaf = [
         muitoIntenso: 2.35,
     },
 ];
-
+//jashfasdf
 //FUNÇÃO PARA CALCULA VALORES
 
 function calcular() {
