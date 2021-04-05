@@ -155,8 +155,15 @@ function calcular() {
     
     // DEIXAR O NOME BONITIN
 
-    nome = nome.toLowerCase();
-    nome = nome.charAt(0).toUpperCase() + nome.slice(1);
+    function deixarONomeBonitin(texto){
+        var palavras = texto.toLowerCase().split(' ');
+        for(var i = 0; i < palavras.length; i++){
+            palavras[i] = palavras[i].charAt(0).toUpperCase() + palavras[i].substring(1);
+        }
+        return palavras.join(' ');
+    }
+
+    nome = deixarONomeBonitin(nome);
 
     // CONDIÇÕES
 
