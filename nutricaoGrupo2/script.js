@@ -145,6 +145,7 @@ function calcular() {
 
     let caloriaTotal = 7700 * emagrecimento;
     let imc = peso / (altura * altura);
+    let classificacaoIMC;
     let gebHomem = parseInt(66.47 + 13.75 * peso + 5 * altura + 6.76 * idade);
     let gebMulher = parseInt(655.1 + 9.56 * peso + 1.85 * altura + 4.68 * idade);
     let pesoIdeal = 21.75 * altura * altura;
@@ -153,6 +154,18 @@ function calcular() {
     let _1KgPorSemana = "";
 
     // CONDIÇÕES
+
+    if(imc < 18.5){
+        classificacaoIMC = `<span style="color: grey;">Abaixo do peso</span>`;
+    } else if(imc >= 18.5 && imc < 25){
+        classificacaoIMC = `<span style="color: green;">Saudável</span>`;
+    } else if(imc > 24.9 && imc < 30){
+        classificacaoIMC = `<span style="color: yellow;">Sobrepeso</span>`;
+    } else if(imc > 30 && imc < 40){
+        classificacaoIMC = `<span style="color: orange;">Obesidade</span>`;
+    } else{
+        classificacaoIMC = `<span style="color: red;">Obesidade mórbida</span>`;
+    }
 
     if (sexo == "masculino") {
         switch (nivelAtividade) {
@@ -245,6 +258,7 @@ function calcular() {
         document.getElementById("resposta").innerHTML = `
                 <p>Olá, ${nome}!<br>
                 O seu IMC é: ${imc.toFixed(2).replace(".", ",")} <br>
+                Classificação: ${classificacaoIMC}<br>
                 O seu Peso ideal é: ${pesoIdeal
                 .toFixed(2)
                 .replace(".", ",")} kg<br>
