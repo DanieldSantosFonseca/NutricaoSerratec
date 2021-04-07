@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <Script>
+            var salario = parseFloat(prompt("Informe seu salário."));
+            var dependente = parseFloat(prompt("Informe se tem dependentes."));
+            var valorDependente = dependente * 189.59;
+            var bruto = salario - dependente
+
+            if(bruto <= 1903.90){
+                document.write("Salário líquido:" + salario + "<br>")
+                document.write("Você está isento")
+            }
+
+            else if(bruto <= 2826.65){
+                var ali1 = bruto * 0.075
+                var liq1 = bruto - ali1
+                document.write("Salário bruto:" + salario + "<br>")
+                document.write("O valor do imposto é:" + ali1 + "<br>")
+                document.write("O salário líquido:" + liq1 + "<br>")
+            }
+
+            else if(bruto <= 3751.05){
+                var ali2 = bruto * 0.15
+                var liq2 = bruto - ali2
+                document.write("Salário bruto:" + salario + "<br>")
+                document.write("O valor do imposto é:" + ali2 + "<br>")
+                document.write("O salário líquido:" + liq2 + "<br>")
+            }
+            else if(bruto <= 4664.68){
+                var ali3 = bruto * 0.225
+                var liq3 = bruto - ali3
+                document.write("Salário bruto:" + salario + "<br>")
+                document.write("O valor do imposto é:" + ali3 + "<br>")
+                document.write("O salário líquido:" + liq3 + "<br>")
+            }
+            else if(bruto > 4664.68){
+                var ali4 = bruto * 0.275
+                var liq4 = bruto - ali4
+                document.write("Salário bruto:" + salario + "<br>")
+                document.write("O valor do imposto é:" + ali4 + "<br>")
+                document.write("O salário líquido:" + liq4 + "<br>")
+            }
+        </Script>
+</body>
+</html>
