@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio_3</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <!-- Crie um sistema onde o usuário informe seu nome, peso, altura, idade, sexo e o sistema calcule o IMC do mesmo e mostre o resultado escrito na tela.
+Fórmula: IMC = Peso ÷ (Altura × Altura)
+ -->
+    <script>
+
+        var nome = prompt("Digite seu nome.");
+        var idade = prompt("Digite sua idade.");
+        var genero = prompt("Digite seu genero.");
+        var peso = prompt("Digite seu peso.");
+        var altura = prompt("Digite sua altura.");
+
+            document.write(`Nome: ${nome}<br> Idade: ${idade}<br> Genero: ${genero}<br> Peso: ${peso}<br> Altura: ${altura}<br>`)
+        
+        var altura2 = altura * altura
+        var imc = peso / altura2
+
+        if (imc < 18.5){
+            document.write(`O seu IMC é: ${imc} <br> Você está abaixo do peso.`)
+
+        }else if(imc >= 18.5 && imc < 24.9){
+            document.write(`O seu IMC é: ${imc} <br> Você está no seu peso ideal.`)
+
+        }else if(imc >= 25 && imc < 29.9){
+            document.write(`O seu IMC é: ${imc} <br> Você está com sobrepeso.`)
+
+        }else if(imc >= 30 && imc < 34.9){
+            document.write(`O seu IMC é: ${imc} <br> Você está no Grau de Obesidade I.`)
+        
+        }else if(imc >= 35 && imc < 39.9){
+            document.write(`O seu IMC é: ${imc} <br> Você está no Grau de Obesidade II.`)
+
+        }else if(imc <= 40){
+            document.write(`O seu IMC é: ${imc} <br> Você está com obesidade morbida.`)
+        }
+    </script>
 </body>
 </html>
